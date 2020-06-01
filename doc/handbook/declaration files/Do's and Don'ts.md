@@ -1,8 +1,8 @@
 # 普通类型
 
-## `Number`，`String`，`Boolean`和`Object`
+## `Number`，`String`，`Boolean`，`Symbol`和`Object`
 
-*不要*使用如下类型`Number`，`String`，`Boolean`或`Object`。
+*不要*使用如下类型`Number`，`String`，`Boolean`，`Symbol`或`Object`。
 这些类型指的是非原始的装盒对象，它们几乎没在JavaScript代码里正确地使用过。
 
 ```ts
@@ -10,14 +10,14 @@
 function reverse(s: String): String;
 ```
 
-*应该*使用类型`number`，`string`，and `boolean`。
+*应该*使用类型`number`，`string`，`boolean`和`symbol`。
 
 ```ts
 /* OK */
 function reverse(s: string): string;
 ```
 
-使用非原始的`object`类型来代替`Object` （[TypeScript 2.2新增](../../release-notes/TypeScript 2.2.md#object-type)）
+使用非原始的`object`类型来代替`Object` （[TypeScript 2.2新增](../../release-notes/TypeScript%202.2.md#object-type)）
 
 ## 泛型
 
